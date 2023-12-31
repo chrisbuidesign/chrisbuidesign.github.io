@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="less.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<script src="jquery-3.5.1.min.js"></script>
+
+</head>
+<body onLoad=set_time() >
+
+
+
+<div class="sidebar">
+  <a class="active" href="index.html">Projects</a>
+  <a href="Resume.pdf" target="_blank">Resume</a>
+  <a href="#about">About</a>
+</div>
+
+
+
+<div class="projectContent">
+
+
+<img class = "headerImage" src="images/projects/GrooveMachine/Loading.gif" style="width:100%" class="image">
+<h1 class = "headerTitle"><strong>GrooveMachine</strong></h1>
+
+
+<div class = "textGrid">
+  <div class="textRow">
+    <div class="textColumnLeft">
+      <h2><strong>Role</strong></h2>
+      <p>UI/UX Lead</p>
+      <h2><strong>Timeline</strong></h2>
+      <p>3 months</p>
+      <h2><strong>Format</strong></h2>
+      <p>Web</p>
+    </div>
+    <div class="textColumnRight">
+      <h2><strong>Context</strong></h2>
+      <p>I led the design efforts by conducting comparative research, developing lo-fi wireframes, and creating hi-fi mockups.</p>
+      <p>GrooveMachine is a tangible interface that uses music to teach young students about coding concepts. Tangible pieces can be placed onto its table surface. The center octagonal hub serves as a step sequencer, which causes the tangibles to play a music sample when their section is passed over by light.</p>
+      <p> An interactive webpage was created to digitize the physical experience.</p>
+      <h2><strong>Goals & Challenges</strong></h2>
+      <p>Redesign GrooveMachine's website without drastically changing existing interactions.</p>
+    </div>
+  </div>
+</div>
+
+<div class = "regContent">
+  
+  <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+  <p class="imageCaption">Physical interface</p>
+
+  <h2><strong>Approaching Redesign</strong></h2>
+    <p>While a broswer version of GrooveMachine already existed, I needed to figure out how to make it fresh without undoing the hard work that was already put into it. It led me to some questions regarding my first moves:</p>
+
+  <ul class="pointList">
+    <li>What functions are users already familiar with?</li>
+    <li>How closely does the website need to mimic the physical interface?</li>
+    <li class="endSection">What are the pain points of the existing webpage?</li>
+  </ul>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Old website</p>
+
+
+  <h2><strong>Identifying Key Features and Opportunities</strong></h2>
+    <p>Since both the physical interface and the previous website contained certain features, it was important to make sure that they appeared in this version of the website as well. Critical parts of the original designs include:</p>
+
+    <ul class="pointList">
+    <li>the step sequencer</li>
+    <li>tangible drawers</li>
+    <li>volume and tempo controls</li>
+    <li>the save function</li>
+    <li>audio visualization</li>
+    <li>code visualization</li>
+  </ul>
+
+  <p>However, there were some functions missing from either (or both) versions of GrooceMachine such as a lack of:
+
+    <ul class="pointList">
+    <li>onboarding</li>
+    <li>sequencer directional controls</li>
+    <li>toggles for visuals</li>
+    <li>options for different audio samples</li>
+  </ul>
+
+    <div class="endSection"></div>
+
+    
+
+
+  <h2><strong>A Fresh Face</strong></h2>
+
+    <p class="endSection">With these notes in mind, I began my work by exploring different layout and developing mood boards.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Trials of different layouts</p>
+
+    <p>Of the layout trials, I ended up choosing one with the navigation bar at the top of the webpage. It offered the most real estate for the sequencer in the center.</p>
+
+
+    <p class="endSection">Color is no stranger to GrooveMachine. I wanted to honor that by including it in the initial mood board explorations for the UI.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Moodboards</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">The layout and color explorations were combined in this early hi-fi mockup + one with drawer open too?</p>
+
+
+  <h2><strong>Audio Visualization</strong></h2>
+    <p class="endSection">The audio visualization distinguished GrooveMachine's web version from its physical version. It was a tricky task to create visuals that were visual interesting but not too distracting.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Audio vis experiments + sketch these out with iPad</p>
+
+
+  <h2><strong>Code Visualization</strong></h2>
+    <p class="endSection">A neat feature of the physical interface was its code visualization. Whenever a user placed a tangible piece on the table, code would appear on a computer screen translating their real-life actions into code. It was updated every time a change was made.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Computer w/ code vis</p>
+
+
+    <p class="endSection">Although it wasn't in the previous web app, it was decided that it would be featured in this new one to get users intrigued about code.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Code vis in UI</p>
+
+
+  <h2><strong>Visual Design Enhancements</strong></h2>
+
+    <p class="endSection">It was noted that the current color palette was too dark, so I went back to the drawing board and tried out more color options.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Sequencer Colors + BG Colors side by side?</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">This one came out on top.</p>
+
+    <p class="endSection">I also spent some time working on the visual design of the tangible pieces.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Tangible pic here</p>
+
+  <h2><strong>New Interaction Opportunities</strong></h2>
+    <p class="endSection">A bottom menu was added to include the "Direction" and "Sample Pack" since they were a crucial part of the table. "Direction" changes the direction of the step sequencer, while "Sample Pack" changes the genre of sounds that are played (i.e. Mariachi, Acoustic, Hip Hop, etc.).</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Bottom menu pic</p>
+
+    <p class="endSection">Onboarding was another important feature that needed to be designed. It was balancing act between being informative and being overwhelming.</p>
+
+    <img class = "captionedImage" src="https://via.placeholder.com/100x40">
+    <p class="imageCaption">Onboarding pic</p>
+
+  <h2><strong>What's Next?</strong></h2>
+
+    <p class="endSection">I'd love to get some user feedback on the new web app. I'm also curious if there are other projects out there like GrooveMachine. A comparative analysis would certainly help me make improvements.</p>
+
+
+  <div class = "centeredButton">
+    <a class = "projButton" href="https://groove-machine-web.herokuapp.com/" target = "_blank">View Full Project</a>
+  </div>
+
+
+
+  <div class="projLinks">
+      <a href="https://www.w3schools.com/howto/howto_css_next_prev.asp" target = "_blank" class="previous">&laquo; Previous - Test Name</a>
+      <a href="#" class="next">Next - Test Name &raquo;</a>
+  </div>
+  
+
+
+</div>
+  
+<footer>Copyright © Chris Bui 2022</footer>
+
+</div>
+
+</body>
+</html>
