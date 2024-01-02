@@ -514,13 +514,14 @@ div.projectContent {
   margin-bottom: 40px;
   text-decoration: none;
   padding: 12px 20px;
-
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
 .projButton:hover {
   background-color: #b3b3b3;
   color: #171717;
-  text-decoration: underline;
 }
 
 
@@ -549,11 +550,12 @@ div.projectContent {
   font-weight: bold;
   color: #b3b3b3;
   display: inline-block;
+  transition: 0.3s ease;
 
 }
 
 .previous:hover {
-  text-decoration: underline;
+/*  text-decoration: underline;*/
   color: #171717;
 }
 
@@ -582,10 +584,11 @@ div.projectContent {
   font-weight: bold;
   color: #b3b3b3;
   display: inline-block;
+  transition: 0.3s ease;
 }
 
 .next:hover {
-  text-decoration: underline;
+/*  text-decoration: underline;*/
   color: #171717;
 }
 
@@ -625,7 +628,7 @@ div.projectContent {
 /*Menu*/
 
 .topnav{
-  padding-bottom: 20px;
+/*  padding-bottom: 20px;*/
 }
 
 
