@@ -684,17 +684,19 @@ div.projectContent {
 /*Menu*/
 .logo {
   z-index: 2;
-  top: .7rem;
+  top: .6rem;
   position: fixed;
-  height: 32px;
-  width: 32px;
+  height: 36px;
+  width: 36px;
   left: 1.5rem;
+  transition: transform .5s ease-in-out;
 }
 
 
 .logo:hover {
   opacity: .4;
-  transition: .2s;
+  transition: .5s;
+  transform: rotate(360deg);
 }
 
 
