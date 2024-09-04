@@ -31,6 +31,14 @@ footer {
 
 
 
+.myName {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+
+
 a {
   font-family: 'Archivo', sans-serif;
   font-style: normal;
@@ -42,7 +50,7 @@ h1 {
   font-family: 'Archivo', sans-serif;
   font-weight: normal;
 /*  font-style: normal;*/
-  font-size: 56px;
+  font-size: 48px;
   margin-top: 0px;
   color: #171717;
 }
@@ -62,6 +70,7 @@ h2 {
   font-style: normal;
   font-size: 32px;
   margin-bottom: -15px;
+  margin-top: -15px;
 }
 
 
@@ -83,8 +92,9 @@ p{
 
 .headerImage {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 450px;
   object-fit: cover;
+  padding-top: 3rem;
   top: 0;
 }
 
@@ -303,6 +313,11 @@ div.indexContent {
 @media screen and (min-width: 480px) {
   .grid {
     padding: 1rem;
+    margin-bottom: 4rem;
+  }
+  .nameBox {
+    padding-left: 1rem;
+    padding-top: 4.5rem;
   }
 }
 
@@ -311,8 +326,13 @@ div.indexContent {
   /* HEADER */
   .grid {
     padding: 1rem;
+    margin-bottom: 4rem;
     }
-
+  .nameBox {
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-top: 4.5rem;
+  }
 }
 
 
@@ -322,6 +342,11 @@ div.indexContent {
     columns: 2;
     column-gap: 1.5rem;
     padding: 2rem;
+    margin-bottom: 2rem;
+    }
+    .nameBox {
+    padding-left: 2rem;
+    padding-top: 6rem;
     }
   }
 
@@ -412,7 +437,7 @@ div.indexContent {
 
 
 .headerTitle{
-/*  padding-bottom: 20px;*/
+  padding-bottom: 20px;
 }
 
 
@@ -423,15 +448,16 @@ div.indexContent {
 
 /*Text Columns*/
 .textGrid{
-  padding-bottom: 60px;
+  padding-bottom: 5px;
 }
+
 
 /* Create two equal columns that floats next to each other */
 .textColumnLeft {
   float: left;
   width: 23%;
-  padding-right: 0px;
-  height: auto; /* Should be removed. Only for demonstration */
+  padding: 0px;
+ /* Should be removed. Only for demonstration */
 
 }
 
@@ -439,8 +465,8 @@ div.indexContent {
 .textColumnRight {
   float: right;
   width: 70%;
-  padding: 0px;
-  height: auto; /* Should be removed. Only for demonstration */
+  padding-left: 0px;
+  /* Should be removed. Only for demonstration */
 
 }
 
@@ -453,11 +479,19 @@ div.indexContent {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .textColumn {
+  .textColumnLeft {
+    width: 100%;
+  }
+  .textColumnRight {
     width: 100%;
   }
 }
 
+
+.thinDiv {
+  border-top: 2px solid #cfcfcf;
+  padding-bottom: 40px;
+}
 
 
 .projImage {
@@ -487,7 +521,7 @@ div.indexContent {
 
 div.projectContent {
   margin-left: 0px;
-  padding: 1px 25%;
+  padding: 1px 30%;
   height: 1000px;
   line-height: 1.8;
 }
@@ -502,9 +536,9 @@ div.projectContent {
 
 .imageCaption {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-family: 'Archivo', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -512,6 +546,10 @@ div.projectContent {
   list-style-type: square;
 }
 
+
+.endPara {
+  padding-bottom: 40px;
+}
 
 .endSection {
   padding-bottom: 60px;
@@ -555,7 +593,7 @@ div.projectContent {
 
 /*Inter-Project Navigation*/
 .projLinks {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 100px;
 } 
 
@@ -644,6 +682,42 @@ div.projectContent {
 
 
 /*Menu*/
+.logo {
+  z-index: 2;
+  top: .7rem;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  left: 1.5rem;
+}
+
+
+.logo:hover {
+  opacity: .4;
+  transition: .2s;
+}
+
+
+.topNavContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height:3rem;
+  display:flex;
+/*  align-items:center;
+  justify-content:center;*/
+/*  background-color: #fcfcfc;*/
+background-color: #fffdfa;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  background-size: 40rem 45rem;
+  margin:0;
+  opacity: .97;
+/*  border-bottom: 4px solid #171717;*/
+/*box-shadow: 0.2px 0.5px 0.5px hsl(0deg 0% 0% / 0.49);*/
+  box-shadow: 0px 0px 6px hsl(0deg 0% 0% / 0.15);
+/*  box-sizing:border-box;*/
+}
 
 .topnav{
 /*  padding-bottom: 20px;*/
@@ -673,11 +747,11 @@ div.projectContent {
 .menu-btn{
   position: fixed;
   z-index: 3;
-  right: 20px;
+  right: 1.5rem;
   /*left: 20px; */
-  top: 20px;
-  height: 50px;
-  width: 50px;
+  top: 0.6rem;
+  height: 36px;
+  width: 36px;
   text-align: center;
   line-height: 50px;
   border-radius: 50%;
@@ -696,7 +770,7 @@ div.projectContent {
   position: absolute;
   top: calc(50% - 1px);
   left: 30%;
-  width: 50%;
+  width: 60%;
   border-bottom: 4px solid #000;
   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
